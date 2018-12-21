@@ -4,7 +4,7 @@
     font-family: "Cuprum", "Arial", sans-serif;
     line-height: 24px;
     color: #ffffff;
-    background-color: red; //Для выделение лейбла. Убрать в конце
+    background-color: red; /*Для выделение лейбла. Убрать в конце*/
 }
 
 .description-of-company {
@@ -44,7 +44,7 @@
     line-height: 17px;
     color: #ffffff;
     text-decoration: none;
-    background-color: #32425c; //Для выделение меню. Убрать в конце
+    background-color: #32425c; /*Для выделение меню. Убрать в конце*/
 }
 
 .goods-navigation li {
@@ -53,7 +53,7 @@
     font-family: "Cuprum", "Arial", sans-serif;
     line-height: 18px;
     color: #ffffff;
-    background-color: #32425c; //Для выделение меню. Убрать в конце
+    background-color: #32425c; /*Для выделение меню. Убрать в конце*/
 }
 
 .goods-navigation a {
@@ -149,4 +149,46 @@
 
 .main-goods-and-services a:active {
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*Карточка популярных товаров*/
+
+.goods li {
+    width: 220px;
+    height: 318px;
+    border: 1px solid #eaeaea;
+    list-style: none;
+}
+
+.goods h3 {
+    color: #000000;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}
+
+.goods p {
+    color: #a9a9a9;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.goods a {
+    display: inline-block;
+    width: 141px;
+    height: 38px;
+    color: #ffffff;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    background-color: #ee3643;
 }
