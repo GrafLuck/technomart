@@ -1,0 +1,152 @@
+.label {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: red; //Для выделение лейбла. Убрать в конце
+}
+
+.description-of-company {
+    font-size: 16px;
+    font-style: italic;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 23px;
+    color: #ee3643;
+    //font-weight: 700; Нет указания на жирность
+}
+
+.phone {
+    
+}
+
+.phone a {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 21px;
+    text-decoration: none;
+    color: #ee3643;
+}
+
+.address {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 24px;
+    color: #32425c;
+}
+
+.main-navigation a {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #32425c; //Для выделение меню. Убрать в конце
+}
+
+.goods-navigation li {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #32425c; //Для выделение меню. Убрать в конце
+}
+
+.goods-navigation a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.user-navigation a {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-goods-and-services ul {
+    list-style: none;
+}
+
+.main-goods-and-services li {
+    width: 300px;
+    height: 123px;
+}
+
+.main-goods-and-services .materials {
+    background-color: #ffbf47;
+    background-image: url("/img/icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 213px center;
+}
+
+.main-goods-and-services .tools {
+    background-color: #3bbce3;
+    background-image: url("/img/icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 197px center;
+}
+
+.main-goods-and-services .mechanism {
+    background-color: #dc91d8;
+    background-image: url("/img/icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 191px center;
+}
+
+.main-goods-and-services .discount {
+    background-color: #8ed78f;
+    background-image: url("/img/icon-4.svg");
+    background-repeat: no-repeat;
+    background-position: 196px center;
+}
+
+.main-goods-and-services .delivery {
+    background-color: #ffc047;
+    background-image: url("/img/icon-5.svg");
+    background-repeat: no-repeat;
+    background-position: 191px center;
+}
+
+.main-goods-and-services h4 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 30px;
+    color: #ffffff;
+    padding: 25px 0px 0px 23px;
+    margin: 0;
+}
+
+.main-goods-and-services a {
+    display: inline-block;
+    margin: 15px 0px 0px 25px;
+    width: 135px;
+    height: 24px;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 12px;
+    
+}
+
+.main-goods-and-services a:hover,
+.main-goods-and-services a:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-goods-and-services a:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
