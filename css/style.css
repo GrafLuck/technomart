@@ -154,10 +154,34 @@
 /*Карточка популярных товаров*/
 
 .goods li {
+    position: relative;
     width: 220px;
     height: 318px;
     border: 1px solid #eaeaea;
     list-style: none;
+}
+
+.top-goods {
+    position: absolute;
+    width: 220px;
+    height: 159px;
+    top: 0px;
+    left: 0px;
+    line-height: 159px;
+    text-align: center;
+}
+
+.bottom-goods {
+    position: absolute;
+    width: 220px;
+    height: 159px;
+    bottom: 0px;
+    left: 0px;
+}
+
+.goods img {
+    text-align: center;
+    vertical-align: middle;
 }
 
 .goods h3 {
@@ -183,7 +207,7 @@
 .goods a {
     display: inline-block;
     width: 141px;
-    height: 38px;
+    height: 27px;
     color: #ffffff;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 17px;
@@ -191,4 +215,30 @@
     line-height: 18px;
     text-transform: uppercase;
     background-color: #ee3643;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 11px;
+    margin-left: 43px;
+    position: relative;
+}
+
+/*Псевдоэлементы используются для создания стрелки кнопки*/
+.goods a::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to bottom left, #ffffff 50%, #ee3643 50%);
+}
+
+.goods a::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(to top left, #ffffff 50%, #ee3643 50%);
 }
