@@ -152,7 +152,9 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/*Карточка популярных товаров*/
+/***************************
+КАРТОЧКА ПОПУЛЯРНЫХ ТОВАРОВ
+***************************/
 
 .goods .goods-item {
     position: relative;
@@ -350,4 +352,72 @@
     height: 60px;
     background: linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #ee3643 50%, #ee3643 83%, rgba(255, 255, 255, 0) 83%);
     z-index: 3;
+}
+
+/*********************************
+КАРТОЧКА ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ
+*********************************/
+
+.manufacters-list {
+    list-style: none;
+}
+
+.manufacters-item {
+    width: 220px;
+    height: 145px;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    background-color: #ffffff;
+}
+
+.manufacters-item:nth-child(1) img {
+    display: block;
+    margin: 53px 47px 55px 47px;
+}
+
+.manufacters-item:nth-child(2) img {
+    display: block;
+    margin: 50px 49px 55px 48px;
+}
+
+.manufacters-item:nth-child(3) img {
+    display: block;
+    margin: 48px 37px 53px 37px;
+}
+
+.manufacters-item:nth-child(4) img {
+    display: block;
+    margin: 21px 11px 36px 9px;
+}
+
+.manufacters-item:nth-child(5) img {
+    display: block;
+    margin: 58px 23px 56px 28px;
+}
+
+.manufacters-item:nth-child(6) img {
+    display: block;
+    margin: 35px 51px 37px 48px;
+}
+
+.manufacters-item:nth-child(7) img {
+    display: block;
+    margin: 23px 34px 26px 35px;
+}
+
+.manufacters-item:nth-child(8) img {
+    display: block;
+    margin: 34px 6px 42px 10px;
+}
+
+.manufacters-item:hover {
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.manufacters-item:active {
+    box-shadow: 0 4px 10px rgba(41, 52, 73, 0.5);
+}
+
+.manufacters-item:active img {
+    opacity: 0.3;
 }
