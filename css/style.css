@@ -75,6 +75,7 @@
 }
 
 .main-goods-and-services li {
+    position: relative;
     width: 300px;
     height: 123px;
 }
@@ -153,7 +154,7 @@
 
 /*Карточка популярных товаров*/
 
-.goods li {
+.goods .goods-item {
     position: relative;
     width: 220px;
     height: 318px;
@@ -204,7 +205,7 @@
     text-align: center;
 }
 
-.goods a {
+.goods .price {
     display: inline-block;
     width: 141px;
     height: 27px;
@@ -223,7 +224,7 @@
 }
 
 /*Псевдоэлементы используются для создания стрелки кнопки*/
-.goods a::before {
+.goods .price::before {
     content: "";
     position: absolute;
     right: 0px;
@@ -233,7 +234,7 @@
     background: linear-gradient(to bottom left, #ffffff 50%, #ee3643 50%);
 }
 
-.goods a::after {
+.goods .price::after {
     content: "";
     position: absolute;
     right: 0px;
@@ -241,4 +242,112 @@
     width: 20px;
     height: 20px;
     background: linear-gradient(to top left, #ffffff 50%, #ee3643 50%);
+}
+
+/*Элементы, появляющиеся при наведении на карточку популярного товара*/
+.hidden {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 159px;
+    background-color: #ffffff;
+}
+
+.btn-to-buy {
+    display: block;
+    box-sizing: border-box;
+    width: 135px;
+    height: 38px;
+    box-shadow: inset 0 -3px 0 #367315;
+    background-color: #63a63e;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+    padding-top: 10px;
+    
+    color: #ffffff;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.btn-to-bookmark {
+    display: block;
+    box-sizing: border-box;
+    width: 135px;
+    height: 38px;
+    border: 3px solid #63a63e;
+    text-decoration: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    padding-top: 10px;
+    
+    color: #32425c;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.goods-item:hover .hidden{
+    display: inline-block;
+    z-index: 2;
+}
+
+.goods-item:hover {
+    box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.btn-to-buy:hover {
+    background-color: #5fbb2d;
+}
+
+.btn-to-buy:active {
+    background-color: #518534;
+    box-shadow: none;
+}
+
+.btn-to-bookmark:hover {
+    border-color: #32425c;
+}
+
+.btn-to-bookmark:active {
+    opacity: 0.3;
+}
+
+.new::before {
+    content: "new";
+    color: #ffffff;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: lowercase;
+    text-align: center; 
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 4;
+    transform: rotate(45deg);
+}
+
+.new::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0) 50%, #ee3643 50%, #ee3643 83%, rgba(255, 255, 255, 0) 83%);
+    z-index: 3;
 }
