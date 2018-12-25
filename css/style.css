@@ -2,6 +2,7 @@ header {
     background-color: #f4f7f9;
     display: flex;
     flex-direction: column;
+    min-height: 320px;
 }
 
 .first-line-menu,
@@ -9,6 +10,7 @@ header {
 .third-line-menu {
     display: flex;
     flex-direction: row;
+    width: 940px;
 }
 
 .label {
@@ -29,19 +31,69 @@ header {
     background-color: #ee3643;
 }
 
+.first-line-menu {
+    min-height: 42px;
+    background-color: #293449;
+    justify-content: flex-start;
+}
 
+.goods-navigation-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.goods-navigation-item {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 18px;
+    color: #ffffff;  
+}
+
+.goods-navigation-item:nth-child(3) a {
+    display: inline-block;
+    width: 150px;
+    height: 42px;
+    background-color: #63a63e;
+    line-height: 42px;
+    text-align: center;
+}
+
+.goods-navigation-item a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.second-line-menu {
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.about-company {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .description-of-company {
+    display: inline-block;
     font-size: 16px;
     font-style: italic;
     font-family: "Cuprum", "Arial", sans-serif;
     line-height: 23px;
     color: #ee3643;
-    /*font-weight: 700; Нет указания на жирность*/
-}
-
-.phone {
     
+    width: 196px;
+    min-height: 60px;
+    margin-left: 53px;
+    /*font-weight: 700; Нет указания на жирность*/
 }
 
 .phone a {
@@ -51,6 +103,14 @@ header {
     line-height: 21px;
     text-decoration: none;
     color: #ee3643;
+    
+    display: inline-block;
+    box-sizing: border-box;
+    width: 270px;
+    min-height: 45px;
+    border: 3px solid #ffffff;
+    padding-left: 74px;
+    line-height: 45px;
 }
 
 .address {
@@ -59,7 +119,64 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     line-height: 24px;
     color: #32425c;
+    
 }
+
+.user-navigation-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.user-navigation-item a {
+    font-size: 21px;
+    font-weight: 400;
+    font-family: "Cuprum", "Arial", sans-serif;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+    
+    display: inline-block;
+}
+
+.user-navigation-item:nth-child(1) a {
+    width: 121px;
+    height: 45px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding-left: 48px;
+    line-height: 45px;
+    margin-right: 10px;
+}
+
+/*.user-navigation-item:nth-child(1) a::before {
+    content: "";
+    background-image: url("../img/icon-login.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 20px;
+    height: 17px;
+    background-color: aqua;
+    opacity: 1;
+}*/
+
+.user-navigation-item:nth-child(2) a {
+    width: 150px;
+    height: 45px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 45px;
+}
+
+.user-navigation-item a:hover {
+    color: #ee3643;
+}
+
+.user-navigation-item a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
 
 .main-navigation {
     width: 940px;
@@ -137,29 +254,7 @@ header {
     text-decoration: none;
 }
 
-.goods-navigation li {
-    font-size: 17px;
-    font-weight: 400;
-    font-family: "Cuprum", "Arial", sans-serif;
-    line-height: 18px;
-    color: #ffffff;
-    background-color: #32425c; /*Для выделение меню. Убрать в конце*/
-    
-}
 
-.goods-navigation a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.user-navigation a {
-    font-size: 21px;
-    font-weight: 400;
-    font-family: "Cuprum", "Arial", sans-serif;
-    line-height: 21px;
-    color: #000000;
-    text-decoration: none;
-}
 
 .main-goods-and-services ul {
     list-style: none;
