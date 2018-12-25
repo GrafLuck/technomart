@@ -421,3 +421,75 @@
 .manufacters-item:active img {
     opacity: 0.3;
 }
+
+
+/*************
+РАЗДЕЛ СЕРВИСЫ
+*************/
+
+.services h2 {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.services .services-common {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.services-list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.services-item button {
+    width: 240px;
+    height: 61px;
+    box-shadow: inset 0 -1px 0 #33445a;
+    background-color: #32425c;
+    
+    color: #ffffff;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 30px;
+    
+    border: none;
+    text-align: left;
+    padding-left: 22px;
+    padding-right: 0px;
+}
+
+.services-item button:hover {
+    background-color: #293449;
+}
+
+.services-item button:active,
+.services-item button:focus
+{
+    box-shadow: 0 1px 0 #ffffff, inset 0 1px 0 #ffffff;
+    background-color: #ffffff;
+    
+    color: #32425c;
+}
+
+.services h3 {
+    color: #32425c;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    text-transform: uppercase;  
+}
+
+.services p {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+}
