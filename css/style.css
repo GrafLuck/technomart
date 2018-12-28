@@ -1,3 +1,7 @@
+/*******************
+ШАПКА САЙТА
+*******************/
+
 header {
     background-color: #f4f7f9;
     display: flex;
@@ -13,6 +17,16 @@ header {
     width: 940px;
 }
 
+/****************************************************
+ПЕРВАЯ ЛИНИЯ МЕНЮ: ЛЕЙБЛ КОМПАНИИ, ПОИСК, МЕНЮ ЗАКАЗА
+*****************************************************/
+
+.first-line-menu {
+    min-height: 42px;
+    background-color: #293449;
+    justify-content: space-between;
+}
+
 .label {
     font-size: 24px;
     font-weight: 400;
@@ -26,15 +40,16 @@ header {
     box-sizing: border-box;
     display: inline-block;
     width: 220px;
-    height: 47px;
-    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+    height: 42px;
+    box-shadow: 0 5px 0 rgba(181, 41, 51, 1);
+        
     background-color: #ee3643;
+    
+    margin-right: 15px;
 }
 
-.first-line-menu {
-    min-height: 42px;
-    background-color: #293449;
-    justify-content: flex-start;
+.site-navigation {
+    margin-right: 83px;
 }
 
 .goods-navigation-list {
@@ -42,14 +57,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-.goods-navigation-item {
+.goods-navigation-item a {
+    text-decoration: none;
+    color: #ffffff;
     font-size: 17px;
     font-weight: 400;
     font-family: "Cuprum", "Arial", sans-serif;
     line-height: 18px;
-    color: #ffffff;  
 }
 
 .goods-navigation-item:nth-child(3) a {
@@ -59,12 +77,13 @@ header {
     background-color: #63a63e;
     line-height: 42px;
     text-align: center;
+    
+    margin-left: 31px;
 }
 
-.goods-navigation-item a {
-    text-decoration: none;
-    color: #ffffff;
-}
+/***********************************************************
+ВТОРАЯ ЛИНИЯ МЕНЮ: СЛОГАН, ТЕЛЕФОН, АДРЕС, МЕНЮ ПОЛЬЗОВАТЕЛЯ
+***********************************************************/
 
 .second-line-menu {
     justify-content: space-between;
@@ -178,6 +197,10 @@ header {
 }
 
 
+/****************************************************
+ТРЕТЬЯ ЛИНИЯ МЕНЮ: ГЛАВНОЕ МЕНЮ САЙТА
+*****************************************************/
+
 .main-navigation {
     width: 940px;
     min-height: 60px;
@@ -254,7 +277,9 @@ header {
     text-decoration: none;
 }
 
-
+/******************************************************
+ОСНОВНАЯ ЧАСТЬ САЙТА: СЛАЙДЕР И ГЛАВНЫЕ ТОВАРЫ И УСЛУГИ
+*******************************************************/
 
 .main-goods-and-services ul {
     list-style: none;
@@ -338,9 +363,9 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-/***************************
-КАРТОЧКА ПОПУЛЯРНЫХ ТОВАРОВ
-***************************/
+/************************************************
+ОСНОВНАЯ ЧАСТЬ САЙТА: КАРТОЧКИ ПОПУЛЯРНЫХ ТОВАРОВ
+*************************************************/
 
 .goods .goods-item {
     position: relative;
@@ -540,9 +565,9 @@ header {
     z-index: 3;
 }
 
-/*********************************
-КАРТОЧКА ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ
-*********************************/
+/*******************************************************
+ОСНОВНАЯ ЧАСТЬ САЙТА: КАРТОЧКИ ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ
+********************************************************/
 
 .manufacters-list {
     list-style: none;
@@ -609,9 +634,9 @@ header {
 }
 
 
-/*************
-РАЗДЕЛ СЕРВИСЫ
-*************/
+/***********************************
+ОСНОВНАЯ ЧАСТЬ САЙТА: РАЗДЕЛ СЕРВИСЫ
+************************************/
 
 .services h2 {
     font-family: "Cuprum", "Arial", sans-serif;
