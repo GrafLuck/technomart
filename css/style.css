@@ -1,3 +1,15 @@
+
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+    
 /*******************
 ШАПКА САЙТА
 *******************/
@@ -7,6 +19,7 @@ header {
     display: flex;
     flex-direction: column;
     min-height: 320px;
+    margin-bottom: 59px;
 }
 
 .first-line-menu,
@@ -415,14 +428,36 @@ header {
 ОСНОВНАЯ ЧАСТЬ САЙТА: СЛАЙДЕР И ГЛАВНЫЕ ТОВАРЫ И УСЛУГИ
 *******************************************************/
 
+.main-goods-and-services {
+    width: 940px;
+    display: flex;
+    flex-direction: column;
+}
+
 .main-goods-and-services ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-goods-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-service-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 
 .main-goods-and-services li {
     position: relative;
     width: 300px;
     height: 123px;
+    margin-bottom: 20px;
 }
 
 .main-goods-and-services .materials {
