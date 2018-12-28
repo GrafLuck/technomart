@@ -24,6 +24,12 @@ header {
 .first-line-menu {
     min-height: 42px;
     background-color: #293449;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper-first-line-menu {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -45,11 +51,37 @@ header {
         
     background-color: #ee3643;
     
-    margin-right: 15px;
+    margin-right: 17px;
+}
+
+.label:hover {
+    background-color: #ca2c37;
+}
+
+.label:active {
+    background-color: #ba2732;
 }
 
 .site-navigation {
-    margin-right: 83px;
+    color: #ffffff;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 42px;
+    padding-left: 32px;
+    position: relative;
+}
+
+.site-navigation::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 0px;
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 17px;
+    display: block;
 }
 
 .goods-navigation-list {
@@ -68,6 +100,68 @@ header {
     font-weight: 400;
     font-family: "Cuprum", "Arial", sans-serif;
     line-height: 18px;
+    position: relative;
+}
+
+.goods-navigation-item:nth-child(1) a {
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+    padding-left: 44px;
+    padding-right: 28px;
+}
+
+.goods-navigation-item:nth-child(1) a::before {
+    content: "";
+    background-image: url(../img/icon-bookmark.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 13px;
+}
+
+.goods-navigation-item:nth-child(1) a:hover {
+    background-color: #212a3a;
+}
+
+.goods-navigation-item:nth-child(1) a:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.goods-navigation-item:nth-child(2) a {
+    display: inline-block;
+    height: 42px;
+    line-height: 42px;
+    text-align: right;
+    
+    padding-left: 50px;
+    padding-right: 31px;
+}
+
+.goods-navigation-item:nth-child(2) a::before {
+    content: "";
+    background-image: url(../img/cart-icon.svg);
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 13px;
+}
+
+.goods-navigation-item:nth-child(2) a:hover {
+    background-color: #212a3a;
+}
+
+.goods-navigation-item:nth-child(2) a:active {
+    background-color: #161d29;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .goods-navigation-item:nth-child(3) a {
@@ -77,17 +171,27 @@ header {
     background-color: #63a63e;
     line-height: 42px;
     text-align: center;
-    
-    margin-left: 31px;
 }
+
+.goods-navigation-item:nth-child(3) a:hover {
+    background-color: #5fbb2d;
+}
+
+.goods-navigation-item:nth-child(3) a:active {
+    background-color: #518534;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
 
 /***********************************************************
 ВТОРАЯ ЛИНИЯ МЕНЮ: СЛОГАН, ТЕЛЕФОН, АДРЕС, МЕНЮ ПОЛЬЗОВАТЕЛЯ
 ***********************************************************/
 
 .second-line-menu {
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-direction: row;
+    margin-top: 46px;
 }
 
 .about-company {
@@ -99,6 +203,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 71px;
 }
 
 .description-of-company {
@@ -112,6 +217,7 @@ header {
     width: 196px;
     min-height: 60px;
     margin-left: 53px;
+    padding-top: 8px;
     /*font-weight: 700; Нет указания на жирность*/
 }
 
@@ -130,6 +236,20 @@ header {
     border: 3px solid #ffffff;
     padding-left: 74px;
     line-height: 45px;
+    
+    position: relative;
+}
+
+.phone a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../img/icon-phone.svg);
+    background-repeat: no-repeat;
+    top: 13px;
+    left: 10px;
+    width: 19px;
+    height: 19px;
 }
 
 .address {
@@ -141,10 +261,19 @@ header {
     
 }
 
+.user-navigation {
+    align-self: flex-start;
+    
+}
+
 .user-navigation-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    margin-left: 69px;
 }
 
 .user-navigation-item a {
@@ -166,18 +295,19 @@ header {
     padding-left: 48px;
     line-height: 45px;
     margin-right: 10px;
+    position: relative;
 }
 
-/*.user-navigation-item:nth-child(1) a::before {
+.user-navigation-item:nth-child(1) a::before {
     content: "";
     background-image: url("../img/icon-login.svg");
     background-repeat: no-repeat;
-    background-position: left center;
     width: 20px;
     height: 17px;
-    background-color: aqua;
-    opacity: 1;
-}*/
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
 
 .user-navigation-item:nth-child(2) a {
     width: 150px;
@@ -200,6 +330,10 @@ header {
 /****************************************************
 ТРЕТЬЯ ЛИНИЯ МЕНЮ: ГЛАВНОЕ МЕНЮ САЙТА
 *****************************************************/
+
+.third-line-menu {
+    margin-top: 44px;
+}
 
 .main-navigation {
     width: 940px;
