@@ -945,10 +945,20 @@ header {
 }
 
 
-
 /***********************************
 ОСНОВНАЯ ЧАСТЬ САЙТА: РАЗДЕЛ СЕРВИСЫ
 ************************************/
+
+.services {
+    width: 940px;
+    min-height: 522px;
+    background-color: #f5f8fa;
+    padding-top: 68px;
+}
+
+.inside-services-wrapper {
+
+}
 
 .services h2 {
     font-family: "Cuprum", "Arial", sans-serif;
@@ -956,6 +966,8 @@ header {
     font-weight: 400;
     line-height: 30px;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 38px;
 }
 
 .services .services-common {
@@ -963,12 +975,14 @@ header {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+    margin-bottom: 74px;
 }
 
 .services-list {
     list-style: none;
     margin: 0;
     padding-left: 0;
+    margin-right: 80px;
 }
 
 .services-item button {
@@ -1002,18 +1016,60 @@ header {
     color: #32425c;
 }
 
+.service-list-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.service-delivery {
+    width: 620px;
+    min-height: 282px;
+    background-image: url(../img/Layer_131.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: none;
+}
+
+.service-guarantee {
+    width: 620px;
+    min-height: 282px;
+    
+    background-image: url(../img/Layer_130.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: none;
+}
+
+.service-credit {
+    width: 620px;
+    min-height: 282px;
+
+    background-image: url(../img/Layer_119.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
 .services h3 {
     color: #32425c;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 35px;
 }
 
 .services p {
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     line-height: 24px;
+    font-size: 13px;
+    margin: 0;
+    margin-bottom: 31px;
 }
 
+.service-credit .btn-services {
+    padding-left: 55px;
+    padding-right: 55px;
+}
