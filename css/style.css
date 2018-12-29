@@ -428,18 +428,44 @@ header {
 ОСНОВНАЯ ЧАСТЬ САЙТА: СЛАЙДЕР И ГЛАВНЫЕ ТОВАРЫ И УСЛУГИ
 *******************************************************/
 
+.promo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 940px;
+}
+
+.promo-inside-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
 .slider {
     width: 620px;
     height: 266px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .first-slider {
+    background-image: url(../img/slider2.jpg);
+    background-repeat: no-repeat;
+    min-height: 266px;
+    position: relative;
+    
+}
+
+.second-slider {
     background-image: url(../img/Layer_99.jpg);
     background-repeat: no-repeat;
     min-height: 266px;
+    position: relative;
+    display: none;
 }
 
-.first-slider .good {
+.good {
     color: #ffffff;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 36px;
@@ -447,20 +473,24 @@ header {
     line-height: 36px;
     text-transform: uppercase;
     margin: 0px;
+    padding-left: 24px;
+    padding-top: 27px;
 }
 
-.first-slider .tagline {
+.tagline {
     color: #ffffff;
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     margin: 0px;
+    padding-top: 8px;
+    padding-left: 24px;
 }
 
 .btn {
-    width: 195px;
-    min-height: 38px;
+    display: inline-block;
+    height: 38px;
     background-color: #ee3643;
     text-decoration: none;
     
@@ -468,78 +498,86 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 18px;
+    line-height: 38px;
     text-transform: uppercase;
+    text-align: center;
 }
 
-.main-goods-and-services {
-    width: 940px;
+.btn:hover {
+    background-color: #ca2c37;
+}
+
+.btn:active {
+    background-color: #ba2732;
+}
+
+.btn-slider {
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+    padding-left: 49px;
+    padding-right: 45px;
+}
+
+.main-goods-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
-.main-goods-and-services ul {
+.main-service-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.main-goods-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.main-service-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-}
-
-.main-goods-and-services li {
+.main-goods-list li,
+.main-service-list li {
     position: relative;
     width: 300px;
     height: 123px;
     margin-bottom: 20px;
 }
 
-.main-goods-and-services .materials {
+.main-goods-list .materials {
     background-color: #ffbf47;
     background-image: url("/img/icon-1.svg");
     background-repeat: no-repeat;
     background-position: 213px center;
 }
 
-.main-goods-and-services .tools {
+.main-goods-list .tools {
     background-color: #3bbce3;
     background-image: url("/img/icon-2.svg");
     background-repeat: no-repeat;
     background-position: 197px center;
 }
 
-.main-goods-and-services .mechanism {
+.main-goods-list .mechanism {
     background-color: #dc91d8;
     background-image: url("/img/icon-3.svg");
     background-repeat: no-repeat;
     background-position: 191px center;
 }
 
-.main-goods-and-services .discount {
+.main-service-list .discount {
     background-color: #8ed78f;
     background-image: url("/img/icon-4.svg");
     background-repeat: no-repeat;
     background-position: 196px center;
 }
 
-.main-goods-and-services .delivery {
+.main-service-list .delivery {
     background-color: #ffc047;
     background-image: url("/img/icon-5.svg");
     background-repeat: no-repeat;
     background-position: 191px center;
 }
 
-.main-goods-and-services h4 {
+.main-goods-list h3,
+.main-service-list h3 {
     font-size: 24px;
     font-weight: 700;
     font-family: "Cuprum", "Arial", sans-serif;
@@ -549,7 +587,8 @@ header {
     margin: 0;
 }
 
-.main-goods-and-services a {
+.main-goods-list a,
+.main-service-list a {
     display: inline-block;
     margin: 15px 0px 0px 25px;
     width: 135px;
@@ -567,18 +606,60 @@ header {
     
 }
 
-.main-goods-and-services a:hover,
-.main-goods-and-services a:focus {
+.main-goods-list a:hover,
+.main-service-list a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.main-goods-and-services a:active {
+.main-goods-list a:active,
+.main-service-list a:active {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
 /************************************************
 ОСНОВНАЯ ЧАСТЬ САЙТА: КАРТОЧКИ ПОПУЛЯРНЫХ ТОВАРОВ
 *************************************************/
+
+.goods {
+    width: 940px;
+    margin-bottom: 21px;
+}
+
+.goods-inside-wrapper,
+.manufacters-inside-wrapper {
+    width: 940px;
+    height: 89px;
+    background-color: #f9f5f0;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.goods h2,
+.manufacters h2  {
+    color: #32425c;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 89px;
+    text-transform: uppercase;
+    margin-left: 30px;
+    align-self: center;
+}
+
+.btn-goods {
+    margin-right: 24px;
+    align-self: center;
+    padding-left: 55px;
+    padding-right: 55px;
+}
+
+.goods-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
 
 .goods .goods-item {
     position: relative;
@@ -782,8 +863,17 @@ header {
 ОСНОВНАЯ ЧАСТЬ САЙТА: КАРТОЧКИ ПОПУЛЯРНЫХ ПРОИЗВОДИТЕЛЕЙ
 ********************************************************/
 
+.manufacters {
+    width: 940px;
+}
+
 .manufacters-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .manufacters-item {
@@ -792,6 +882,7 @@ header {
     box-sizing: border-box;
     border: 1px solid #eaeaea;
     background-color: #ffffff;
+    margin-bottom: 20px;
 }
 
 .manufacters-item:nth-child(1) img {
@@ -845,6 +936,14 @@ header {
 .manufacters-item:active img {
     opacity: 0.3;
 }
+
+.btn-manufacters {
+    margin-right: 24px;
+    align-self: center;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
 
 
 /***********************************

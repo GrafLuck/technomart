@@ -62,46 +62,53 @@
             </div>
         </header>
         <main>
-            <section class="slider">
-                <h2 class="visually-hidden">Рекламный слайдер</h2>
-                <div class="first-slider">
-                    <p class="good">Дрели</p>
-                    <p class="tagline">Соседям на радость!</p>
-                    <a class="btn" href="#">Открыть каталог</a>
-                </div>
-            </section>
-            <section class="main-goods-and-services">
-                <h2 class="visually-hidden">Типы товаров и сервисов</h2>
-                <h3 class="visually-hidden">Типы товаров</h3>
+            <section class="promo">
+                <h2 class="visually-hidden">Промо-раздел</h2>              
                 <ul class="main-goods-list">
                     <li class="materials new">
-                        <h4>Материалы</h4>
+                        <h3>Материалы</h3>
                         <a href="#">На любой вкус</a>
                     </li>
                     <li class="tools">
-                        <h4>Инструмент</h4>
+                        <h3>Инструмент</h3>
                         <a href="#">На все случаи</a>
                     </li>
                     <li class="mechanism">
-                        <h4>Техника</h4>
+                        <h3>Техника</h3>
                         <a href="#">Для стройки</a>
                     </li>
                 </ul>
-                <h3 class="visually-hidden">Типы сервисов</h3>
-                <ul class="main-service-list">
+                <div class="promo-inside-wrapper">
+                    <ul class="main-service-list">
                     <li class="discount">
-                        <h4>Скидки 50%</h4>
+                        <h3>Скидки 50%</h3>
                         <a href="#">На 350 товаров</a>
                     </li>
                     <li class="delivery">
-                        <h4>Доставка</h4>
+                        <h3>Доставка</h3>
                         <a href="#">Бесплатно</a>
                     </li>
                 </ul>
+                    <ul class="slider">
+                        <li class="first-slider">
+                            <p class="good">Дрели</p>
+                            <p class="tagline">Соседям на радость!</p>
+                            <a class="btn btn-slider" href="#">Открыть каталог</a>
+                        </li>
+                        <li class="second-slider">
+                            <p class="good">Перфораторы</p>
+                            <p class="tagline">Настоящие мужские игрушки</p>
+                            <a class="btn btn-slider" href="#">Открыть каталог</a>
+                        </li>
+                    </ul> 
+                </div>
             </section>
             <section class="goods">
-                <h2>Популярные товары</h2>
-                <ul>
+                <div class="goods-inside-wrapper">
+                    <h2>Популярные товары</h2>
+                    <a class="btn btn-goods" href="#">Все популярные товары</a>
+                </div>
+                <ul class="goods-list">
                     <li class="goods-item">
                         <div class="top-goods">
                             <img src="img/snippet-32961_copy_3.jpg" alt="Перфоратор Bosch BFG 9000" width="184" height="164">
@@ -159,10 +166,12 @@
                         </div>
                     </li>
                 </ul>
-                <a href="#">Все популярные товары</a>
             </section>
-            <section class="manufacters">
-                <h2>Популярные производители</h2>
+            <section class="manufacters"> 
+                <div class="manufacters-inside-wrapper">
+                    <h2>Популярные производители</h2>
+                    <a class="btn btn-manufacters" href="#">Все производители</a>
+                </div>
                 <ul class="manufacters-list">
                     <li class="manufacters-item">
                         <a href="#">
@@ -205,7 +214,6 @@
                         </a>
                     </li>
                 </ul>
-                <a href="">Все популярные производители</a>
             </section>
             <section class="services">
                 <h2>Сервисы</h2>
