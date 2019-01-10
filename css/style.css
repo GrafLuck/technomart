@@ -543,35 +543,35 @@ header {
 
 .main-goods-list .materials {
     background-color: #ffbf47;
-    background-image: url("/img/icon-1.svg");
+    background-image: url("../img/icon-1.svg");
     background-repeat: no-repeat;
     background-position: 213px center;
 }
 
 .main-goods-list .tools {
     background-color: #3bbce3;
-    background-image: url("/img/icon-2.svg");
+    background-image: url("../img/icon-2.svg");
     background-repeat: no-repeat;
     background-position: 197px center;
 }
 
 .main-goods-list .mechanism {
     background-color: #dc91d8;
-    background-image: url("/img/icon-3.svg");
+    background-image: url("../img/icon-3.svg");
     background-repeat: no-repeat;
     background-position: 191px center;
 }
 
 .main-service-list .discount {
     background-color: #8ed78f;
-    background-image: url("/img/icon-4.svg");
+    background-image: url("../img/icon-4.svg");
     background-repeat: no-repeat;
     background-position: 196px center;
 }
 
 .main-service-list .delivery {
     background-color: #ffc047;
-    background-image: url("/img/icon-5.svg");
+    background-image: url("../img/icon-5.svg");
     background-repeat: no-repeat;
     background-position: 191px center;
 }
