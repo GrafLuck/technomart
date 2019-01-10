@@ -1073,3 +1073,73 @@ header {
     padding-left: 55px;
     padding-right: 55px;
 }
+
+/**************************************
+ОСНОВНАЯ ЧАСТЬ САЙТА: РАЗДЕЛ О КОМПАНИИ
+***************************************/
+
+.about-company-contacts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    padding-top: 80px;
+}
+
+.about-company-chapter {
+    width: 540px;
+}
+
+.contacts {
+    width: 300px;
+}
+
+.about-company-chapter h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    font-family: "Cuprum", "Arial", sans-serif;
+    
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.about-company-chapter p {
+    font-size: 13px;
+    line-height: 30px;
+    color: #000000;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.about-company-chapter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.about-company-chapter li {
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 25px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.about-company-chapter li::before {
+    content: "";
+    border: 1px solid #ff0000;
+    display: block;
+    width: 25px;
+    position: absolute;
+    top: 9px;
+    left: 0px;
+}
