@@ -1083,6 +1083,7 @@ header {
     justify-content: space-between;
     width: 940px;
     padding-top: 80px;
+    margin-bottom: 86px;
 }
 
 .about-company-chapter {
@@ -1107,19 +1108,19 @@ header {
 
 .about-company-chapter p {
     font-size: 13px;
-    line-height: 30px;
+    line-height: 24px;
     color: #000000;
     font-family: "PT Sans", "Arial", sans-serif;
     font-weight: 400;
     margin: 0;
-    padding-bottom: 30px;
+    padding-bottom: 27px;
 }
 
 .about-company-chapter ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    
+    margin-bottom: 35px;
 }
 
 .about-company-chapter li {
@@ -1129,7 +1130,7 @@ header {
     font-family: "Cuprum", "Arial", sans-serif;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     padding-left: 30px;
     position: relative;
 }
@@ -1142,4 +1143,104 @@ header {
     position: absolute;
     top: 9px;
     left: 0px;
+}
+
+.btn-company {
+    box-sizing: border-box;
+    width: 220px;
+}
+
+.contacts h2 {
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    font-family: "Cuprum", "Arial", sans-serif;
+    
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.contacts p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.contacts img {
+    margin-bottom: 40px;
+}
+
+.btn-list {
+    box-sizing: border-box;
+    width: 300px;
+    border: none;
+    padding: 0;
+}
+
+/*********************************
+ПОДВАЛ САЙТА. ВЕРХНЯЯ ЧАСТЬ ФУТЕРА
+*********************************/
+.footer {
+    width: 940px;
+}
+
+
+.top-footer {
+    background-color: #31415b;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contacts {
+    background-color: #293349;
+}
+
+.label {
+    width: 220px;
+}
+
+.footer-about-company .address {
+    font-size: 18px;
+    line-height: 24px;
+    color: #f3f7f9;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: 400;
+}
+
+.footer-main-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-main-menu a {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #f3f7f9;
+    font-family: "Cuprum", "Arial", sans-serif;
+    text-decoration: none;
+}
+
+.footer-second-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-second-menu a {
+    font-size: 18px;
+    line-height: 24px;
+    color: #ffd180;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
 }
